@@ -1,4 +1,4 @@
-![image](./Desktop/Snack.jpeg)
+
 # Phase-One-Project
 
 # MICROSOFT FILM PROJECT
