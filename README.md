@@ -40,20 +40,20 @@ Using inner join, I joined filtered2 and the budget_df table and named the reult
 3.1 Exploratory Data Anslysis
 My first business question was to see which movie genres had higher ratings with high number of votes. 
 
-I plotted a bar graph of genres vs. numvotes, for movies with ratings above 6 and numvotes above 100. The graph above shows that the following movie genres have high ratings and number of votes:
+I plotted a bar graph of genres vs. numvotes, for movies with ratings above 6 and numvotes above 100. The graph showed that the following movie genres have high ratings and number of votes:
 Adventure, Animation, Comedy
 Action, Adventure, Sci-Fi
 Action, Drama, Family
 
 The second business question was to answer the question of whether high production cost translates to high movie income. I plotted a scatter plot to show the relationship between production budget and the worldwide gross. 
-The graph clearly shows that correlation between production budget and worldwide gross. There are movies with high production budget taht do not translate to high worldwide gross. Also, there are movies with low production budget but high worldwide gross. 
+The graph showed that correlation between production budget and worldwide gross. There are movies with high production budget taht do not translate to high worldwide gross. Also, there are movies with low production budget but high worldwide gross. 
 Another scatter plot was also plotted to show the relationship between production budget and domestic gross.
 
 Just like the plot on the relationship between production budget and worldwide gross, this plot confirms that high production budget does not guarantee high movie income.
 
 Genre was another variable I used to determine the most profitable movies. The business question i was trying to answer was whether movie income depends with its genre. Therefore, in the joined_df dataframe, I added another column ‘Profit’ which I calculated by subtracting production budget from the worldwide gross. After plotting genres against profits, I got the following chart. 
 
-The chart shows that the following genres make the highest profits:
+The chart showed that the following genres make the highest profits:
 Thriller
 Action, Drama, Family
 Action, Adventure, Thriller
