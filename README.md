@@ -26,7 +26,7 @@ The im.db is a relational database with tables containing information such as mo
 ### 2.2 	Data preparation
 I started preparing data by first loading the tn.movie_budgets.csv and im.db to my jupyter notebook. 
 Second, I joined the movie_ratings and the movie_basics tables from the im.db file.
-2.3. Data Cleaning  
+### 2.3. Data Cleaning  
 Data cleaning is an important step done to ensure clarity, validity and consistency of data being used in the subsequentb steps. Another important role of this step is to remove outliers, NaN values, and ensure data used fully addresses the business question.
 
 The first thing i did was to check for duplicates in the movie_ratings table. I did this using the primary_title column. This column was chosen because two movies cannot have a shared primary title, according to the data set that i was working with. I used the primary_title as the primary key.
@@ -38,8 +38,8 @@ The movie_ratings_no_duplicates was filtered further by dropping movies with ave
 The purpose of this was to ensure taht I only work with top rated movies with many number of votes.
 Next after reading tn.movie_budgets.csv and saving it in the variable budget_df, I went ahead and checked its datatype. I learned that the columns I wanted to use: production_budget, worldwide_gross, and domestic_gross, were object types. Which I then converted to integer type. 
 Using inner join, I joined filtered2 and the budget_df table and named the reultimng table joined_df. Joining was important because it enabled me to have all the columns and rows that I wanted to use in answering my business question.
-3.Data Analysis
-3.1 Exploratory Data Anslysis
+### 3.Data Analysis
+### 3.1 Exploratory Data Anslysis
 My first business question was to see which movie genres had higher ratings with high number of votes. 
 
 I plotted a bar graph of genres vs. numvotes, for movies with ratings above 6 and numvotes above 100. The graph showed that the following movie genres have high ratings and number of votes:
